@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cruzadinho.css">
+    <link rel="stylesheet" href="cruzadinha.css">
+    <script src="cruzadinha.js"></script>
 </head>
 
 <body>
@@ -53,19 +54,19 @@
         <tr>
             <td class="bloco"></td>
             <td class="bloco" class="numeros">1</td>
-            <td class="bloco"><input id="registradores_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra2" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra3 i7_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra4" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra5" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra6" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra7" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra8 addressbus_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra9" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra10" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra11" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra12" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="registradores_letra13 " class=""  maxLength="1"></td>
+            <td class="bloco"><input id="R" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="E" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="G" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="I" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="S" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="T" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="R" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="A" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="D" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="O" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="R" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="E" onkeyup="validar(this)" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="S" onkeyup="validar(this)" class=""  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
@@ -77,11 +78,11 @@
             <td class="bloco" class="numeros">5</td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="i7_letra2" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="7" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco" class="numeros">14</td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="addressbus_letra3" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="D" class="" onkeyup="validar(this)" maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
@@ -95,14 +96,14 @@
         <tr>
             <td class="bloco"></td>
             <td class="bloco" class="numeros">4</td>
-            <td class="bloco"><input id="ram_letra1 rom_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="ram_letra2" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="ram_letra3" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="R" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="dma_letra1" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="D" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="addressbus_letra4" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="D" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
@@ -116,90 +117,90 @@
         <tr>
             <td class="bloco"></td>
             <td class="bloco" class="numeros">8</td>
-            <td class="bloco"><input id="rom_letra2" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="O" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco" class="numeros">9</td>
-            <td class="bloco"><input id="dma_letra2" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="addressbus_letra5" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="R" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="databus_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
-
-        <tr>
-            <td class="bloco"><input id="memoriaDeMassa_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra2 eprom_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra3 rom_letra3" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra4" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra5" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra6 i5_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra7 dma_letra3" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="espaco" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra8" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra9 addressbus_letra6" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="espaco" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra10" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra11" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra12" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra13" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="memoriaDeMassa_letra14 databus_letra2" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="D" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
         </tr>
 
         <tr>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="eprom_letra2" class=""  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="i5_letra2" class=""  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="addressbus_letra7" class=""  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="databus_letra3" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="E" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="O" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="R" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="I" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="espaco" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="D" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="E" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="espaco" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
         </tr>
 
         <tr>
             <td class="bloco"></td>
-            <td class="bloco"><input id="eprom_letra3" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="P" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+            <td class="bloco"><input id="5" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+            <td class="bloco"><input id="T" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"></td>
+            <td class="bloco"></td>
+        </tr>
+
+        <tr>
+            <td class="bloco"></td>
+            <td class="bloco"><input id="O" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco" class="numeros">10</td>
-            <td class="bloco"><input id="cs_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="addressbus_letra8 cs_letra2" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="C" class="" onkeyup="validar(this)"  maxLength="1">  </td>
+            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco" class="numeros">11</td>
-            <td class="bloco"><input id="flash_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="flash_letra2" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="databus_letra4 flash_letra3" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="flash_letra4" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="flash_letra5" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="F" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="L" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="H" class="" onkeyup="validar(this)"  maxLength="1"></td>
         </tr>
 
         <tr>
             <td class="bloco"></td>
-            <td class="bloco"><input id="eprom_letra4" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="O" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
@@ -213,14 +214,14 @@
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="espaco" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="espaco" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
         </tr>
 
         <tr>
             <td class="bloco"></td>
-            <td class="bloco"><input id="eprom_letra5" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
@@ -228,13 +229,13 @@
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="addressbus_letra9" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="B" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="databus_letra5" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="B" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
         </tr>
@@ -249,13 +250,13 @@
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco" class="numeros">12</td>
-            <td class="bloco"><input id="addressbus_letra11 ula_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="ula_letra2" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="ula_letra3" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="U" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="L" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco" class="numeros">13</td>
-            <td class="bloco"><input id="cpu_letra1" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="cpu_letra2" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="databus_letra6 cpu_letra3" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="C" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="P" class="" onkeyup="validar(this)"  maxLength="1"></td>
+            <td class="bloco"><input id="U" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
         </tr>
@@ -270,19 +271,16 @@
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="addressbus_letra12" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
-            <td class="bloco"><input id="databus_letra7" class=""  maxLength="1"></td>
+            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
             <td class="bloco"></td>
             <td class="bloco"></td>
         </tr>
-
-       
-
     </table>
 </body>
 
