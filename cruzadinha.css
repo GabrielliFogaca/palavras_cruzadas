@@ -1,16 +1,32 @@
+body {
+    background-image: url("img/4907157.jpg");
+}
+h1 {
+padding-left: 40%;
+}
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container .numeros {
-    font-size: 100px;
+.container #numeros {
+    padding-left: 1.9%;
+    margin-bottom: 0.1%;
 }
 
 .container #espaco {
-    background-color: black;
+    background-image: linear-gradient(rgb(165, 162, 162), rgb(255, 255, 255));
 }
+
+
+.perguntas p {
+    margin: 1.2px;
+    padding: 3.5px;
+    background-color: #dad9d9;
+    filter: blur(medida CSS);
+}
+
 
 .bloco{
     width: 30px;

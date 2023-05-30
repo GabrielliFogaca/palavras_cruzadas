@@ -1,287 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="cruzadinha.css">
+    <link rel="stylesheet" href="cruzadinha.css" />
     <script src="cruzadinha.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <h1>PALAVRAS CRUZADAS</h1>
     <div class="perguntas">
-        <p>1. (Registradores)</p>
-        <p>2. i7</p>
-        <p>3. Address Bus</p>
-        <p>4. RAM</p>
-        <p>5. ROM</p>
-        <p>6. Data Bus</p>
-        <p>7. Memoria de massa</p>
-        <p>8. EPROM</p>
-        <p>9. I5</p>
-        <p>10. CS</p>
-        <p>11. FLASH</p>
-        <p>12. ULA</p>
-        <p>13. CPU</p>
-        <p>14. DMA</p>
+      <p>
+        1. Memória dentro do processador quearmazenam dados por um curto período
+        sendo mais rapida que as outras memorias.
+      </p>
+      <p>
+        2. É uma família de processadores Intel. A família foi lançada com
+        microarquitetura Intel Nehalem de primeira geração. O primeiro modelo
+        foi lançado oficialmente em 17 de novembro de 2008
+      </p>
+      <p>
+        3. É um barramento de computador usado para especificar um endereço
+        físico na memória.
+      </p>
+      <p>
+        4. Acesso randômico ou acesso aleatório, também chamado de memória
+        volátil.
+      </p>
+      <p>5. Um tipo de memória que permite apenas leitura.</p>
+      <p>
+        6. É um barramento de computador usado para transmitir dados entre
+        componentes.
+      </p>
+      <p>
+        7. Também conhecida como memória auxiliar, tem como função armazenar
+        grandes quantidades de informações. Os dados armazenados não são
+        perdidos quando desligamos o equipamento, ao contrário da memória ram.
+      </p>
+      <p>
+        8. Um tipo de chip de memória de computador que mantém seus dados quando
+        a energia é desligada. Em outras palavras, é não volátil.
+      </p>
+      <p>
+        9. É uma série de processadores da Intel que aborda a utilização da
+        microarquitetura Nehalem.O primeiro modelo foi lançados aos usuários em
+        9 de Setembro de 2009, apresenta uma frequência de 2.66 GHz, trabalhando
+        com 4 núcleos e possuindo um cache L3 de 8 MB.
+      </p>
+      <p
+        >10. É o nome de uma linha de controle em eletrônica digital usada para
+        selecionar um dos circuitos integrados entre vários conectados ao mesmo
+        barramento de computador</p
+      >
+      <p>11. Um tipo de dispositivo de armazenamento não volátil, ou seja, mesmo
+        se não tiver energia, manterá as informações que salvas nela, muito mais
+        rápida do que uma tradicional memória EEPROM porque, ao invés de apagar
+        um byte por vez, apaga um bloco ou o chip inteiro</p
+      >
+      <p>
+        12. Unidade Lógica e Aritmética , executar as quatro operações básicas e
+        operações lógicas de Álgebra Booleana.
+      </p>
+      <p>
+        13. Unidade central de processamento, responsavel executar todas as
+        operações necessárias para o funcionamento do dispositivo.
+      </p>
+      <p
+        >14. Permite que certos dispositivos de hardware num computador acessem
+        a memória do sistema para leitura e escrita independentemente da
+        CPU</p
+      >
     </div>
 
-
     <table class="container">
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">2</td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">3</td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">2</td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">3</td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">1</td>
-            <td class="bloco"><input id="R" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="E" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="G" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="I" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="S" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="T" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="R" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="A" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="D" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="O" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="R" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="E" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"><input id="S" onkeyup="validar(this)" class=""  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">1</td>
+        <td class="bloco">
+          <input id="R" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="E" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="G" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="I" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="S" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="T" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="R" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="A" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="D" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="O" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="R" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="E" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="S" onkeyup="validar(this)" class="" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">5</td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="7" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco" class="numeros">14</td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="D" class="" onkeyup="validar(this)" maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">5</td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="7" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco" id="numeros">14</td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="D" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">4</td>
-            <td class="bloco"><input id="R" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="D" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="D" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">6</td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">4</td>
+        <td class="bloco">
+          <input id="R" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="A" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="M" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="D" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="D" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">6</td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">8</td>
-            <td class="bloco"><input id="O" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">9</td>
-            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="R" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="D" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">8</td>
+        <td class="bloco">
+          <input id="O" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">9</td>
+        <td class="bloco">
+          <input id="M" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="R" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="D" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="E" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="O" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="R" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="I" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="espaco" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="D" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="E" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="espaco" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco">
+          <input id="M" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="E" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="M" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="O" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="R" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="I" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="A" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco" id="espaco"></td>
+        <td class="bloco">
+          <input id="D" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="E" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco" id="espaco"></td>
+        <td class="bloco">
+          <input id="M" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="A" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="S" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="S" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="A" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="P" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="5" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="T" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="P" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="5" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="S" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="T" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="O" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">10</td>
-            <td class="bloco"><input id="C" class="" onkeyup="validar(this)"  maxLength="1">  </td>
-            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">11</td>
-            <td class="bloco"><input id="F" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="L" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="H" class="" onkeyup="validar(this)"  maxLength="1"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="O" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">10</td>
+        <td class="bloco">
+          <input id="C" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="S" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">11</td>
+        <td class="bloco">
+          <input id="F" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="L" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="A" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="S" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="H" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="O" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="espaco" class="espaco"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="espaco" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="O" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="espaco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="espaco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="M" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="B" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="B" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="M" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="B" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="B" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco" class="numeros">12</td>
-            <td class="bloco"><input id="U" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="L" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="A" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco" class="numeros">13</td>
-            <td class="bloco"><input id="C" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="P" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"><input id="U" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco" id="numeros">12</td>
+        <td class="bloco">
+          <input id="U" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="L" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="A" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco" id="numeros">13</td>
+        <td class="bloco">
+          <input id="C" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="P" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco">
+          <input id="U" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
 
-        <tr>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-            <td class="bloco"><input id="S" class="" onkeyup="validar(this)"  maxLength="1"></td>
-            <td class="bloco"></td>
-            <td class="bloco"></td>
-        </tr>
+      <tr>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="S" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+        <td class="bloco">
+          <input id="S" class="" onkeyup="validar(this)" maxlength="1" />
+        </td>
+        <td class="bloco"></td>
+        <td class="bloco"></td>
+      </tr>
     </table>
-</body>
-
+  </body>
 </html>
